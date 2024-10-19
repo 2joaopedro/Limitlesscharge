@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  public void JumpForce(Rigidbody2D rig, float jumpForce) {
+        if(Input.GetKeyDown(KeyCode.Space)) {
+           rig.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Force);
+        }
+   }
 }
