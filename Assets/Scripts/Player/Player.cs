@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         movement.Move(rig, speed,anim);
-        jump.JumpForce(rig, jumpForce);
+        jump.JumpForce(rig, jumpForce,speed);
         
     }
 }
